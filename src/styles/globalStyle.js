@@ -4,7 +4,7 @@ import reset from "styled-react";
 export const mainStyle = {
   bgcolor: "#1d1d1d",
   color: "white",
-  mainColor: "black",
+  mainColor: "red",
 };
 export const GlobalStyled = createGlobalStyle`
     ${reset}
