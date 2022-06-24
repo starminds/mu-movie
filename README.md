@@ -2,7 +2,7 @@
 
 # Todo
 
-- [] Package Install
+- [x] Package Install
 - [] router setup
 - [] Create Components
 - [] Helmet
