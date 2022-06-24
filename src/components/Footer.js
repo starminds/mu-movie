@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const SFooter = styled.Footer`
+const SFooter = styled.footer`
   padding: 75px 0;
   display: flex;
   justify-content: center;

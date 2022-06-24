@@ -13,7 +13,7 @@ function App() {
     <HelmetProvider>
       <Router>
         <GlobalStyled />
-        <Header></Header>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/detail/:id" element={<Detail />} />
