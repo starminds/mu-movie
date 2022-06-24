@@ -1,13 +1,13 @@
 import { useEffect } from "react";
-import { movieApi } from "../../../styles/api";
+import { movieApi } from "../../../api";
 // console.log(movieApi.nowplaying());
 
 export const Home = () => {
   useEffect(() => {
     const movieData = async () => {
-      const {} = await movieApi.nowplaying();
-      //   console.log(playing);
-      //   console.log(await movieApi.nowplaying());
+      const {
+        data: { results },
+      } = await movieApi.copRated();
     };
     movieData();
   }, []);
