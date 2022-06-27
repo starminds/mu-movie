@@ -5,6 +5,7 @@ export const mainStyle = {
   bgcolor: "#1d1d1d",
   color: "white",
   mainColor: "red",
+  padding: "0 89px",
 };
 export const GlobalStyled = createGlobalStyle`
     ${reset}
@@ -17,6 +18,7 @@ export const GlobalStyled = createGlobalStyle`
         background-color: ${mainStyle.bgcolor};
         color: ${mainStyle.color};
         letter-spacing: -1px;
+        word-break: keep-all;
     }    
 
     a{

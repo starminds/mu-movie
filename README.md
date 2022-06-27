@@ -7,11 +7,14 @@
 - [x] Create Components
 - [x] Helmet
 - [x] Get Api
+- [] Container
+- [] Responsive
 
 ## Main page
 
 - [x] Use Effect
-- [] try catch
+- [x] try catch
+- [] Loading
 - [] Header Event
 - [] slide
 
