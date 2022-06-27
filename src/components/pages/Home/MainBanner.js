@@ -26,6 +26,7 @@ const Desc = styled.div`
 `;
 
 export const MainBanner = ({ playData }) => {
+  console.log(playData);
   return (
     <Banner
       style={{
