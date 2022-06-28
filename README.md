@@ -7,20 +7,24 @@
 - [x] Create Components
 - [x] Helmet
 - [x] Get Api
-- [] Container
-- [] Responsive
+- [x] Container
+- [x] Header Responsive
+- [] Main Container Responsive
 
 ## Main page
 
 - [x] Use Effect
 - [x] try catch
-- [] Loading
+- [x] Loading
+- [x] Slide
+- [] Slide Link
+- [] Slide Navigation
 - [] Header Event
-- [] slide
 
 ## Detall page
 
 - [] Video
+  -[] Link
 
 ## Search page
 

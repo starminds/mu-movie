@@ -13,12 +13,13 @@ const Banner = styled.section`
 `;
 const Title = styled.div`
   max-width: 650px;
-  /* width: 100%; */
+  width: 100%;
   font-size: 80px;
   font-weight: 700;
   line-height: 6rem;
 
   @media screen and (max-width: 500px) {
+    max-width: 340px;
     font-size: 45px;
     line-height: 4rem;
     position: absolute;
