@@ -20,6 +20,7 @@
 - [] Slide Link
 - [] Slide Navigation
 - [] Header Event
+- [] 404 Image
 
 ## Detall page
 
