@@ -5,7 +5,8 @@ export const mainStyle = {
   bgcolor: "#1d1d1d",
   color: "white",
   mainColor: "red",
-  padding: "0 89px",
+  padding: "0 80px",
+  moPadding: "0 20px",
 };
 export const GlobalStyled = createGlobalStyle`
     ${reset}
