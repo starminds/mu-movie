@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { mainStyle } from "../styles/globalStyle";
@@ -14,6 +15,8 @@ const SHeader = styled.div`
   top: 0;
   left: 0;
   z-index: 9;
+  transition: 0.5s;
+  background-color: ${(props) => props.bgcolor};
   @media screen and (max-width: 500px) {
     padding: ${mainStyle.moPadding};
   }
@@ -43,10 +46,23 @@ const Menu = styled.div`
 `;
 
 export const Header = () => {
+  const [bg, setBg] = useState("");
+
+  const handleScroll = () => {
+    const sct = window.pageYOffset;
+    if (sct > 500) {
+      setBg("#1d1d1d");
+    } else {
+      setBg("transparent");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
   return (
-    <SHeader>
+    <SHeader bgcolor={bg}>
       <Logo>
-        <Link to={"/"}>mu-movie</Link>
+        <Link to={"/"}>mumovie</Link>
       </Logo>
 
       <MenWrap>

@@ -18,9 +18,9 @@
 - [x] Loading
 - [x] Slide
 - [x] Slide Navigation
-- [] Slide Link
-- [] Header Event
-- [] 404 Image
+- [x] Slide Link
+- [x] 404 Image
+- [x] Header Events
 
 ## Detall page
 
