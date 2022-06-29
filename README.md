@@ -17,15 +17,15 @@
 - [x] try catch
 - [x] Loading
 - [x] Slide
+- [x] Slide Navigation
 - [] Slide Link
-- [] Slide Navigation
 - [] Header Event
 - [] 404 Image
 
 ## Detall page
 
 - [] Video
-  -[] Link
+- [] Link
 
 ## Search page
 
