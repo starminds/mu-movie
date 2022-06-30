@@ -10,6 +10,10 @@ const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
+  @media screen and (max-width: 500px) {
+    display: block;
+    margin-top: 70px;
+  }
 `;
 
 const Con = styled.div`
@@ -17,17 +21,32 @@ const Con = styled.div`
   &:nth-child(1) {
     height: 80vh;
   }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 const Title = styled.h3`
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 40px;
+
+  @media screen and (max-width: 500px) {
+    height: 100px;
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 `;
 
 const Release = styled.div`
   font-size: 20px;
   font-weight: 600;
+  @media screen and (max-width: 500px) {
+    text-align: center;
+  }
 `;
 
 const Genres = styled.ul`
@@ -37,12 +56,18 @@ const Genres = styled.ul`
     list-style: disc;
     margin-bottom: 5px;
   }
+  @media screen and (max-width: 500px) {
+    text-align: center;
+  }
 `;
 
 const RunTime = styled.div`
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
+  @media screen and (max-width: 500px) {
+    text-align: center;
+  }
 `;
 
 const Desc = styled.p`
