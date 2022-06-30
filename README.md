@@ -24,8 +24,10 @@
 
 ## Detall page
 
+- [x] Link
+- [] Scroll error
+- [] Responsive
 - [] Video
-- [] Link
 
 ## Search page
 
