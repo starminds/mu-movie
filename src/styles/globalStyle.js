@@ -1,17 +1,21 @@
 import { createGlobalStyle } from "styled-components";
-import reset from "styled-react";
+import reset from "styled-reset";
 
 export const mainStyle = {
   bgcolor: "#1d1d1d",
   color: "white",
   mainColor: "red",
-  padding: "0 80px",
+  padding: "0 60px",
   moPadding: "0 20px",
 };
 export const GlobalStyled = createGlobalStyle`
     ${reset}
     *{
         box-sizing: border-box;
+    }
+
+    li{
+        list-style: none;
     }
 
     body{

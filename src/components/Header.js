@@ -1,3 +1,5 @@
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -24,6 +26,8 @@ const SHeader = styled.div`
 const Logo = styled.div`
   font-size: 28px;
   font-weight: 800;
+  position: relative;
+  z-index: 10;
   a {
     color: ${mainStyle.mainColor};
   }
@@ -35,6 +39,9 @@ const MenWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 const Menu = styled.div`
   margin-left: 100px;
@@ -45,8 +52,49 @@ const Menu = styled.div`
   }
 `;
 
+const MoMenu = styled.div`
+  display: none;
+  @media screen and (max-width: 500px) {
+    display: block;
+  }
+`;
+
+const MoMmenu = styled.ul`
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: ${(props) => props.leftResult};
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  li {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 100px;
+    &:nth-child(1) {
+      font-size: 24px;
+    }
+  }
+`;
+
+const MenuBtn = styled.div`
+  font-size: 25px;
+`;
+const CloseBtn = styled.li`
+  position: absolute;
+  font-size: 25px;
+  top: 27px;
+  right: 20px;
+  z-index: 10;
+`;
+
 export const Header = () => {
-  const [bg, setBg] = useState("");
+  const [bg, setBg] = useState("transparent");
+  const [left, setleft] = useState("100%");
 
   const handleScroll = () => {
     const sct = window.pageYOffset;
@@ -75,10 +123,27 @@ export const Header = () => {
         <Menu>
           <Link to={"/"}>Search</Link>
         </Menu>
-        <Menu>
-          <Link to={"/"}>NotFound</Link>
-        </Menu>
       </MenWrap>
+
+      <MoMenu>
+        <MenuBtn onClick={() => setleft("0")}>
+          <FontAwesomeIcon icon={faBars} />
+        </MenuBtn>
+
+        <MoMmenu leftResult={left}>
+          <CloseBtn onClick={() => setleft("100%")}>
+            <FontAwesomeIcon icon={faClose} />
+          </CloseBtn>
+          <li>
+            <Link Link to={"/"}>
+              Home{" "}
+            </Link>
+          </li>
+          <li>
+            <Link to={"/search"}>Search</Link>
+          </li>
+        </MoMmenu>
+      </MoMenu>
     </SHeader>
   );
 };
