@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { imgUrl } from "../../../constants/constant";
 
@@ -96,6 +97,9 @@ export const MovieDetall = ({ movieData }) => {
           ))}
         </Genres>
         <Desc>{movieData.overview.slice(0, 300) + "...."}</Desc>
+        {/* <Button>
+            <Link to={}
+        </Button> */}
       </Con>
     </Wrap>
   );

@@ -5,12 +5,16 @@ import { movieApi } from "../../../api";
 import { ScrollTop } from "../../../ScrollTop";
 import { Container } from "../../Container";
 import { Loading } from "../../Loding";
+import { PageTitle } from "../../PageTitle";
 import { MovieDetall } from "./MovieDetall";
 
 const Iframe = styled.iframe`
   width: 100%;
   height: 800px;
   margin-top: 150px;
+  @media screen and (max-width: 500px) {
+    height: 300px;
+  }
 `;
 
 export const Detail = () => {
@@ -37,6 +41,7 @@ export const Detail = () => {
 
   return (
     <div>
+      <PageTitle title={"Detail"} />
       <ScrollTop />
       {loading ? (
         <Loading />

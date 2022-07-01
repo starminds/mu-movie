@@ -6,6 +6,7 @@ import { MainBanner } from "./MainBanner";
 import "swiper/css";
 import { Container } from "../../Container";
 import { Movies } from "./Movies";
+import { PageTitle } from "../../PageTitle";
 // console.log(movieApi.nowplaying());
 
 export const Home = () => {
@@ -46,6 +47,7 @@ export const Home = () => {
 
   return (
     <div>
+      <PageTitle title={"Home"} />
       {loading ? (
         <Loading />
       ) : (
