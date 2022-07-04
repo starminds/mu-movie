@@ -19,6 +19,8 @@ const Con = styled.div`
   }
   @media screen and (max-width: 500px) {
     width: 100%;
+    height: 100vh;
+    position: relative;
   }
 `;
 
@@ -53,7 +55,14 @@ const Genres = styled.ul`
     margin-bottom: 5px;
   }
   @media screen and (max-width: 500px) {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin: 20px;
+      border: 2px solid;
+      list-style: none;
+    }
   }
 `;
 
@@ -65,7 +74,11 @@ const RunTime = styled.div`
     text-align: center;
   }
 `;
-
+const Vote_average = styled.div`
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+`;
 const Desc = styled.p`
   font-size: 18px;
   font-weight: 400;
@@ -73,6 +86,9 @@ const Desc = styled.p`
   margin-top: 30px;
   opacity: 0.8;
   letter-spacing: 0.5px;
+  @media screen and (max-width: 500px) {
+    text-align: left;
+  }
 `;
 
 export const MovieDetall = ({ movieData }) => {
@@ -96,6 +112,7 @@ export const MovieDetall = ({ movieData }) => {
             <li key={genre.id}>{genre.name}</li>
           ))}
         </Genres>
+        <Vote_average>{movieData.vote_average}</Vote_average>
         <Desc>{movieData.overview.slice(0, 300) + "...."}</Desc>
         {/* <Button>
             <Link to={}

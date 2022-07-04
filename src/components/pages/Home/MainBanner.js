@@ -8,6 +8,7 @@ const Banner = styled.section`
   padding-top: 250px;
   position: relative;
   @media screen and (max-width: 500px) {
+    width: 100%;
     height: 100vh;
     position: relative;
   }
