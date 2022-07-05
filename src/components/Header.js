@@ -118,10 +118,10 @@ export const Header = () => {
           <Link to={"/"}>Home</Link>
         </Menu>
         <Menu>
-          <Link to={"/"}>Detail</Link>
+          <Link to={"/Detail"}>Detail</Link>
         </Menu>
         <Menu>
-          <Link to={"/"}>Search</Link>
+          <Link to={"/Search"}>Search</Link>
         </Menu>
       </MenWrap>
 
