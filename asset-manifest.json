@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mu-movie/static/css/main.9bf80ff5.css",
+    "main.js": "/mu-movie/static/js/main.144cc11f.js",
+    "index.html": "/mu-movie/index.html",
+    "main.9bf80ff5.css.map": "/mu-movie/static/css/main.9bf80ff5.css.map",
+    "main.144cc11f.js.map": "/mu-movie/static/js/main.144cc11f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bf80ff5.css",
+    "static/js/main.144cc11f.js"
+  ]
+}
