@@ -19,7 +19,7 @@ const Input = styled.input`
   padding: 20px;
   box-sizing: border-box;
   font-size: 20px;
-  &::placeholder {
+  font &::placeholder {
     font-size: 20px;
   }
 `;
